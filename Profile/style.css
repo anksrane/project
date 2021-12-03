@@ -1,0 +1,256 @@
+body{
+  position: relative;
+	background-color: #333;
+	color: #182153;
+  width: 100%;
+}
+.navbar-brand,.nav-item .nav-link{
+	color: #182153;
+}
+.active{
+  font-weight: bold;
+}
+/*
+.custom-toggler.navbar-toggler {
+    border-color: rgb(24,33,83);
+}*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(24,33,83)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.container-fluid{
+	padding-right: 0;
+	padding-left: 0;
+}
+#Info{
+	width: 100%;
+	top: 0;
+	left:0;
+	background-image: url(background.jpg);
+	height: auto;
+}
+.card{
+	margin: auto;
+	width: 60%;
+	top: 50px;
+	background-color: white;
+	border: none;
+	z-index: 2;
+}
+.photo{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+}
+.imgcenter{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 0;
+}
+/*style="text-align: -webkit-center;"*/
+.vcenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.vcenter table tr:nth-child(1) th:nth-child(1){
+	font-size: 2em;
+}
+.vcenter table tr:nth-child(2) th:nth-child(1){
+	font-size: 1.5em;
+}
+#Myself{
+	width: 100%;
+	background-color: #f1f1f1;
+	height: auto;
+	position: relative;
+	padding: 100px 200px;
+	text-align: center;
+}
+#Experience,#Education{
+	background-color: #ffffff;
+	padding: 10px;
+	border-bottom: 1px solid #f2f3f8;
+}
+.Exp,.Edu{
+	text-align: center;
+	font-size: 2em;
+  font-weight: bold;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #f2f3f8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeData {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeData::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -7px;
+  background-color: #002e5d;
+  border: 4px solid #002e5d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -7px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+#showBtn{
+  background: none!important;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+#showBtn:active, #showBtn:focus{
+  border: none;
+}
+#project{
+  display: none;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .timeData {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .timeData::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 23px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+#Skills{
+  background-color: #182153;
+  padding: 10px;
+  border-bottom: 1px solid #f2f3f8;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+/*Background Change Animation*/
+.bgfill{
+  display: block;
+  background: linear-gradient(to right, rgba(24,33,83,0.5), rgba(255,255,255,0.5));
+  background-size: 200% 100%;
+  animation:slide 3s linear infinite alternate;
+}
+.bgfill h3{
+  text-align: center;
+  padding: 10px;
+  animation: slidename 3s linear infinite alternate;
+  display: block; 
+}
+@keyframes slide{
+  0%  {background-position: right bottom;}
+  100%{background-position: left bottom;}
+}
+@keyframes slidename{
+  0%  {color: #182153;text-shadow: 2px 2px 2px #ffffff;}
+  100%{color: #ffffff;text-shadow: 2px 2px 2px #182153;}
+}
+@media screen and (max-width: 768px){
+  .card{
+    width: 70%;
+  }
+  #Myself{
+    padding: 100px 50px;
+  }
+}
