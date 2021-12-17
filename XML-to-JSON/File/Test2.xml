@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<device xmlns="http://www.fda.gov/cdrh/gudid"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		deviceid="08809265152507">
+		<deviceRecordStatus>Published</deviceRecordStatus>
+		<devicePublishDate>2015-09-24</devicePublishDate>
+		<deviceCommDistributionEndDate />
+		<deviceCommDistributionStatus>In Commercial Distribution
+		</deviceCommDistributionStatus>
+		<identifiers>
+			<identifier>
+				<deviceId>08809265152507</deviceId>
+				<deviceIdType>Primary</deviceIdType>
+				<deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+				<containsDINumber />
+				<pkgQuantity />
+				<pkgDiscontinueDate />
+				<pkgStatus />
+			</identifier>
+		</identifiers>
+		<brandName>Leforte</brandName>
+		<versionModelNumber>20-LR-004-F</versionModelNumber>
+		<catalogNumber />
+		<companyName>Jeil Medical Corporation</companyName>
+		<deviceCount>1</deviceCount>
+		<deviceDescription />
+		<DMExempt>false</DMExempt>
+		<premarketExempt>false</premarketExempt>
+		<deviceHCTP>false</deviceHCTP>
+		<deviceKit>false</deviceKit>
+		<deviceCombinationProduct>false</deviceCombinationProduct>
+		<singleUse>true</singleUse>
+		<lotBatch>true</lotBatch>
+		<serialNumber>false</serialNumber>
+		<manufacturingDate>true</manufacturingDate>
+		<expirationDate>false</expirationDate>
+		<donationIdNumber>false</donationIdNumber>
+		<labeledContainsNRL>false</labeledContainsNRL>
+		<labeledNoNRL>false</labeledNoNRL>
+		<MRISafetyStatus>Labeling does not contain MRI Safety Information
+		</MRISafetyStatus>
+		<rx>true</rx>
+		<otc>false</otc>
+		<contacts />
+		<gmdnTerms>
+			<gmdn>
+				<gmdnPTName>Craniofacial fixation plate, non-bioabsorbable
+				</gmdnPTName>
+				<gmdnPTDefinition>A small, implantable sheet of firm material that
+					is attached with screws to fractured craniofacial bone (including
+					the maxilla and/or mandible), to bridge and stabilize the fracture
+					gap, and shield the site from stress as the bone heals; the
+					material cannot be chemically degraded or absorbed by natural body
+					processes [includes implant grade metal such as surgical steel,
+					titanium alloy, or carbon fibre]. The device may also be used for
+					craniofacial reconstructive procedures (e.g., to treat congenital
+					malformations), endobrow fixation, or craniotomy flap fixation.
+				</gmdnPTDefinition>
+			</gmdn>
+		</gmdnTerms>
+		<productCodes>
+			<fdaProductCode>
+				<productCode>JEY</productCode>
+				<productCodeName>Plate, Bone</productCodeName>
+			</fdaProductCode>
+		</productCodes>
+		<deviceSizes />
+		<environmentalConditions />
+		<sterilization>
+			<deviceSterile>false</deviceSterile>
+			<sterilizationPriorToUse>true</sterilizationPriorToUse>
+			<methodTypes>
+				<sterilizationMethod>Moist Heat or Steam Sterilization
+				</sterilizationMethod>
+			</methodTypes>
+		</sterilization>
+	</device>
+	<device xmlns="http://www.fda.gov/cdrh/gudid"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		deviceid="08809265152491">
+		<deviceRecordStatus>Published</deviceRecordStatus>
+		<devicePublishDate>2015-09-24</devicePublishDate>
+		<deviceCommDistributionEndDate />
+		<deviceCommDistributionStatus>In Commercial Distribution
+		</deviceCommDistributionStatus>
+		<identifiers>
+			<identifier>
+				<deviceId>08809265152491</deviceId>
+				<deviceIdType>Primary</deviceIdType>
+				<deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+				<containsDINumber />
+				<pkgQuantity />
+				<pkgDiscontinueDate />
+				<pkgStatus />
+			</identifier>
+		</identifiers>
+		<brandName>Leforte</brandName>
+		<versionModelNumber>20-ST-018-R</versionModelNumber>
+		<catalogNumber />
+		<companyName>Jeil Medical Corporation</companyName>
+		<deviceCount>1</deviceCount>
+		<deviceDescription />
+		<DMExempt>false</DMExempt>
+		<premarketExempt>false</premarketExempt>
+		<deviceHCTP>false</deviceHCTP>
+		<deviceKit>false</deviceKit>
+		<deviceCombinationProduct>false</deviceCombinationProduct>
+		<singleUse>true</singleUse>
+		<lotBatch>true</lotBatch>
+		<serialNumber>false</serialNumber>
+		<manufacturingDate>true</manufacturingDate>
+		<expirationDate>false</expirationDate>
+		<donationIdNumber>false</donationIdNumber>
+		<labeledContainsNRL>false</labeledContainsNRL>
+		<labeledNoNRL>false</labeledNoNRL>
+		<MRISafetyStatus>Labeling does not contain MRI Safety Information
+		</MRISafetyStatus>
+		<rx>true</rx>
+		<otc>false</otc>
+		<contacts />
+		<gmdnTerms>
+			<gmdn>
+				<gmdnPTName>Craniofacial fixation plate, non-bioabsorbable
+				</gmdnPTName>
+				<gmdnPTDefinition>A small, implantable sheet of firm material that
+					is attached with screws to fractured craniofacial bone (including
+					the maxilla and/or mandible), to bridge and stabilize the fracture
+					gap, and shield the site from stress as the bone heals; the
+					material cannot be chemically degraded or absorbed by natural body
+					processes [includes implant grade metal such as surgical steel,
+					titanium alloy, or carbon fibre]. The device may also be used for
+					craniofacial reconstructive procedures (e.g., to treat congenital
+					malformations), endobrow fixation, or craniotomy flap fixation.
+				</gmdnPTDefinition>
+			</gmdn>
+		</gmdnTerms>
+		<productCodes>
+			<fdaProductCode>
+				<productCode>JEY</productCode>
+				<productCodeName>Plate, Bone</productCodeName>
+			</fdaProductCode>
+		</productCodes>
+		<deviceSizes />
+		<environmentalConditions />
+		<sterilization>
+			<deviceSterile>false</deviceSterile>
+			<sterilizationPriorToUse>true</sterilizationPriorToUse>
+			<methodTypes>
+				<sterilizationMethod>Moist Heat or Steam Sterilization
+				</sterilizationMethod>
+			</methodTypes>
+		</sterilization>
+	</device>
+	  <device xmlns="http://www.fda.gov/cdrh/gudid" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deviceid="08809265152477">
+    <deviceRecordStatus>Published</deviceRecordStatus>
+    <devicePublishDate>2015-09-24</devicePublishDate>
+    <deviceCommDistributionEndDate />
+    <deviceCommDistributionStatus>In Commercial Distribution</deviceCommDistributionStatus>
+    <identifiers>
+      <identifier>
+        <deviceId>08809265152477</deviceId>
+        <deviceIdType>Primary</deviceIdType>
+        <deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+        <containsDINumber />
+        <pkgQuantity />
+        <pkgDiscontinueDate />
+        <pkgStatus />
+      </identifier>
+    </identifiers>
+    <brandName>Leforte</brandName>
+    <versionModelNumber>20-ST-018-M</versionModelNumber>
+    <catalogNumber />
+    <companyName>Jeil Medical Corporation</companyName>
+    <deviceCount>1</deviceCount>
+    <deviceDescription />
+    <DMExempt>false</DMExempt>
+    <premarketExempt>false</premarketExempt>
+    <deviceHCTP>false</deviceHCTP>
+    <deviceKit>false</deviceKit>
+    <deviceCombinationProduct>false</deviceCombinationProduct>
+    <singleUse>true</singleUse>
+    <lotBatch>true</lotBatch>
+    <serialNumber>false</serialNumber>
+    <manufacturingDate>true</manufacturingDate>
+    <expirationDate>false</expirationDate>
+    <donationIdNumber>false</donationIdNumber>
+    <labeledContainsNRL>false</labeledContainsNRL>
+    <labeledNoNRL>false</labeledNoNRL>
+    <MRISafetyStatus>Labeling does not contain MRI Safety Information</MRISafetyStatus>
+    <rx>true</rx>
+    <otc>false</otc>
+    <contacts />
+    <gmdnTerms>
+      <gmdn>
+        <gmdnPTName>Craniofacial fixation plate, non-bioabsorbable</gmdnPTName>
+        <gmdnPTDefinition>A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation.</gmdnPTDefinition>
+      </gmdn>
+    </gmdnTerms>
+    <productCodes>
+      <fdaProductCode>
+        <productCode>JEY</productCode>
+        <productCodeName>Plate, Bone</productCodeName>
+      </fdaProductCode>
+    </productCodes>
+    <deviceSizes />
+    <environmentalConditions />
+    <sterilization>
+      <deviceSterile>false</deviceSterile>
+      <sterilizationPriorToUse>true</sterilizationPriorToUse>
+      <methodTypes>
+        <sterilizationMethod>Moist Heat or Steam Sterilization</sterilizationMethod>
+      </methodTypes>
+    </sterilization>
+  </device>
+  <device xmlns="http://www.fda.gov/cdrh/gudid" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deviceid="08809265152460">
+    <deviceRecordStatus>Published</deviceRecordStatus>
+    <devicePublishDate>2015-09-24</devicePublishDate>
+    <deviceCommDistributionEndDate />
+    <deviceCommDistributionStatus>In Commercial Distribution</deviceCommDistributionStatus>
+    <identifiers>
+      <identifier>
+        <deviceId>08809265152460</deviceId>
+        <deviceIdType>Primary</deviceIdType>
+        <deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+        <containsDINumber />
+        <pkgQuantity />
+        <pkgDiscontinueDate />
+        <pkgStatus />
+      </identifier>
+    </identifiers>
+    <brandName>Leforte</brandName>
+    <versionModelNumber>20-ST-016-R</versionModelNumber>
+    <catalogNumber />
+    <companyName>Jeil Medical Corporation</companyName>
+    <deviceCount>1</deviceCount>
+    <deviceDescription />
+    <DMExempt>false</DMExempt>
+    <premarketExempt>false</premarketExempt>
+    <deviceHCTP>false</deviceHCTP>
+    <deviceKit>false</deviceKit>
+    <deviceCombinationProduct>false</deviceCombinationProduct>
+    <singleUse>true</singleUse>
+    <lotBatch>true</lotBatch>
+    <serialNumber>false</serialNumber>
+    <manufacturingDate>true</manufacturingDate>
+    <expirationDate>false</expirationDate>
+    <donationIdNumber>false</donationIdNumber>
+    <labeledContainsNRL>false</labeledContainsNRL>
+    <labeledNoNRL>false</labeledNoNRL>
+    <MRISafetyStatus>Labeling does not contain MRI Safety Information</MRISafetyStatus>
+    <rx>true</rx>
+    <otc>false</otc>
+    <contacts />
+    <gmdnTerms>
+      <gmdn>
+        <gmdnPTName>Craniofacial fixation plate, non-bioabsorbable</gmdnPTName>
+        <gmdnPTDefinition>A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation.</gmdnPTDefinition>
+      </gmdn>
+    </gmdnTerms>
+    <productCodes>
+      <fdaProductCode>
+        <productCode>JEY</productCode>
+        <productCodeName>Plate, Bone</productCodeName>
+      </fdaProductCode>
+    </productCodes>
+    <deviceSizes />
+    <environmentalConditions />
+    <sterilization>
+      <deviceSterile>false</deviceSterile>
+      <sterilizationPriorToUse>true</sterilizationPriorToUse>
+      <methodTypes>
+        <sterilizationMethod>Moist Heat or Steam Sterilization</sterilizationMethod>
+      </methodTypes>
+    </sterilization>
+  </device>
+  <device xmlns="http://www.fda.gov/cdrh/gudid" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deviceid="08809265152453">
+    <deviceRecordStatus>Published</deviceRecordStatus>
+    <devicePublishDate>2015-09-24</devicePublishDate>
+    <deviceCommDistributionEndDate />
+    <deviceCommDistributionStatus>In Commercial Distribution</deviceCommDistributionStatus>
+    <identifiers>
+      <identifier>
+        <deviceId>08809265152453</deviceId>
+        <deviceIdType>Primary</deviceIdType>
+        <deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+        <containsDINumber />
+        <pkgQuantity />
+        <pkgDiscontinueDate />
+        <pkgStatus />
+      </identifier>
+    </identifiers>
+    <brandName>Leforte</brandName>
+    <versionModelNumber>20-ST-016</versionModelNumber>
+    <catalogNumber />
+    <companyName>Jeil Medical Corporation</companyName>
+    <deviceCount>1</deviceCount>
+    <deviceDescription />
+    <DMExempt>false</DMExempt>
+    <premarketExempt>false</premarketExempt>
+    <deviceHCTP>false</deviceHCTP>
+    <deviceKit>false</deviceKit>
+    <deviceCombinationProduct>false</deviceCombinationProduct>
+    <singleUse>true</singleUse>
+    <lotBatch>true</lotBatch>
+    <serialNumber>false</serialNumber>
+    <manufacturingDate>true</manufacturingDate>
+    <expirationDate>false</expirationDate>
+    <donationIdNumber>false</donationIdNumber>
+    <labeledContainsNRL>false</labeledContainsNRL>
+    <labeledNoNRL>false</labeledNoNRL>
+    <MRISafetyStatus>Labeling does not contain MRI Safety Information</MRISafetyStatus>
+    <rx>true</rx>
+    <otc>false</otc>
+    <contacts />
+    <gmdnTerms>
+      <gmdn>
+        <gmdnPTName>Craniofacial fixation plate, non-bioabsorbable</gmdnPTName>
+        <gmdnPTDefinition>A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation.</gmdnPTDefinition>
+      </gmdn>
+    </gmdnTerms>
+    <productCodes>
+      <fdaProductCode>
+        <productCode>JEY</productCode>
+        <productCodeName>Plate, Bone</productCodeName>
+      </fdaProductCode>
+    </productCodes>
+    <deviceSizes />
+    <environmentalConditions />
+    <sterilization>
+      <deviceSterile>false</deviceSterile>
+      <sterilizationPriorToUse>true</sterilizationPriorToUse>
+      <methodTypes>
+        <sterilizationMethod>Moist Heat or Steam Sterilization</sterilizationMethod>
+      </methodTypes>
+    </sterilization>
+  </device>
+  <device xmlns="http://www.fda.gov/cdrh/gudid" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deviceid="08809265152446">
+    <deviceRecordStatus>Published</deviceRecordStatus>
+    <devicePublishDate>2015-09-24</devicePublishDate>
+    <deviceCommDistributionEndDate />
+    <deviceCommDistributionStatus>In Commercial Distribution</deviceCommDistributionStatus>
+    <identifiers>
+      <identifier>
+        <deviceId>08809265152446</deviceId>
+        <deviceIdType>Primary</deviceIdType>
+        <deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+        <containsDINumber />
+        <pkgQuantity />
+        <pkgDiscontinueDate />
+        <pkgStatus />
+      </identifier>
+    </identifiers>
+    <brandName>Leforte</brandName>
+    <versionModelNumber>20-ST-016-M</versionModelNumber>
+    <catalogNumber />
+    <companyName>Jeil Medical Corporation</companyName>
+    <deviceCount>1</deviceCount>
+    <deviceDescription />
+    <DMExempt>false</DMExempt>
+    <premarketExempt>false</premarketExempt>
+    <deviceHCTP>false</deviceHCTP>
+    <deviceKit>false</deviceKit>
+    <deviceCombinationProduct>false</deviceCombinationProduct>
+    <singleUse>true</singleUse>
+    <lotBatch>true</lotBatch>
+    <serialNumber>false</serialNumber>
+    <manufacturingDate>true</manufacturingDate>
+    <expirationDate>false</expirationDate>
+    <donationIdNumber>false</donationIdNumber>
+    <labeledContainsNRL>false</labeledContainsNRL>
+    <labeledNoNRL>false</labeledNoNRL>
+    <MRISafetyStatus>Labeling does not contain MRI Safety Information</MRISafetyStatus>
+    <rx>true</rx>
+    <otc>false</otc>
+    <contacts />
+    <gmdnTerms>
+      <gmdn>
+        <gmdnPTName>Craniofacial fixation plate, non-bioabsorbable</gmdnPTName>
+        <gmdnPTDefinition>A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation.</gmdnPTDefinition>
+      </gmdn>
+    </gmdnTerms>
+    <productCodes>
+      <fdaProductCode>
+        <productCode>JEY</productCode>
+        <productCodeName>Plate, Bone</productCodeName>
+      </fdaProductCode>
+    </productCodes>
+    <deviceSizes />
+    <environmentalConditions />
+    <sterilization>
+      <deviceSterile>false</deviceSterile>
+      <sterilizationPriorToUse>true</sterilizationPriorToUse>
+      <methodTypes>
+        <sterilizationMethod>Moist Heat or Steam Sterilization</sterilizationMethod>
+      </methodTypes>
+    </sterilization>
+  </device>
+  <device xmlns="http://www.fda.gov/cdrh/gudid" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deviceid="08809265152422">
+    <deviceRecordStatus>Published</deviceRecordStatus>
+    <devicePublishDate>2015-09-24</devicePublishDate>
+    <deviceCommDistributionEndDate />
+    <deviceCommDistributionStatus>In Commercial Distribution</deviceCommDistributionStatus>
+    <identifiers>
+      <identifier>
+        <deviceId>08809265152422</deviceId>
+        <deviceIdType>Primary</deviceIdType>
+        <deviceIdIssuingAgency>GS1</deviceIdIssuingAgency>
+        <containsDINumber />
+        <pkgQuantity />
+        <pkgDiscontinueDate />
+        <pkgStatus />
+      </identifier>
+    </identifiers>
+    <brandName>Leforte</brandName>
+    <versionModelNumber>20-ST-010-R</versionModelNumber>
+    <catalogNumber />
+    <companyName>Jeil Medical Corporation</companyName>
+    <deviceCount>1</deviceCount>
+    <deviceDescription />
+    <DMExempt>false</DMExempt>
+    <premarketExempt>false</premarketExempt>
+    <deviceHCTP>false</deviceHCTP>
+    <deviceKit>false</deviceKit>
+    <deviceCombinationProduct>false</deviceCombinationProduct>
+    <singleUse>true</singleUse>
+    <lotBatch>true</lotBatch>
+    <serialNumber>false</serialNumber>
+    <manufacturingDate>true</manufacturingDate>
+    <expirationDate>false</expirationDate>
+    <donationIdNumber>false</donationIdNumber>
+    <labeledContainsNRL>false</labeledContainsNRL>
+    <labeledNoNRL>false</labeledNoNRL>
+    <MRISafetyStatus>Labeling does not contain MRI Safety Information</MRISafetyStatus>
+    <rx>true</rx>
+    <otc>false</otc>
+    <contacts />
+    <gmdnTerms>
+      <gmdn>
+        <gmdnPTName>Craniofacial fixation plate, non-bioabsorbable</gmdnPTName>
+        <gmdnPTDefinition>A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation.</gmdnPTDefinition>
+      </gmdn>
+    </gmdnTerms>
+    <productCodes>
+      <fdaProductCode>
+        <productCode>JEY</productCode>
+        <productCodeName>Plate, Bone</productCodeName>
+      </fdaProductCode>
+    </productCodes>
+    <deviceSizes />
+    <environmentalConditions />
+    <sterilization>
+      <deviceSterile>false</deviceSterile>
+      <sterilizationPriorToUse>true</sterilizationPriorToUse>
+      <methodTypes>
+        <sterilizationMethod>Moist Heat or Steam Sterilization</sterilizationMethod>
+      </methodTypes>
+    </sterilization>
+  </device>
+</data>
