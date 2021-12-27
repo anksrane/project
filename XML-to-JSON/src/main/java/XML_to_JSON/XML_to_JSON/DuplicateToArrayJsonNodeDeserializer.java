@@ -1,4 +1,4 @@
-package XML_to_JSON;
+package XML_to_JSON.XML_to_JSON;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -9,8 +9,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-public class DuplicateToArrayJsonNodeDeserializer extends JsonNodeDeserializer {
-
+public class DuplicateToArrayJsonNodeDeserializer extends JsonNodeDeserializer{
 	@Override
 	protected void _handleDuplicateField(JsonParser p, DeserializationContext ctxt, JsonNodeFactory nodeFactory,
 			String fieldName, ObjectNode objectNode, JsonNode oldValue, JsonNode newValue)

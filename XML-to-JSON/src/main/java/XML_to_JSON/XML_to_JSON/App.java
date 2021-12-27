@@ -1,4 +1,4 @@
-package XML_to_JSON;
+package XML_to_JSON.XML_to_JSON;
 
 /**
  * Hello world!
