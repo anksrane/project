@@ -12,9 +12,10 @@ public class Testcode {
 		File xmlFile = new File(
 				"C:\\Users\\ankirane\\Desktop\\Ankit Courses\\Working Directory\\Eclipse\\XML-to-JSON\\File\\Test2.xml");
 		String xmlString = "";
-		String regex = "([a-z])([A-Z]+)";
-		String replacement = "$1_$2";
-		String[] patterns = new String[] {
+		String camelCase = "([a-z])([A-Z]+)";
+		String underScoreCase = "$1_$2";
+		String underScoreUpperCase = "_[A-Z]+";
+		String[] emptyPatterns = new String[] {
 				// This will remove empty elements that look like <ElementName />
 				"\\s*<\\w+ />",
 				// This will remove empty elements that look like <ElementName/>
@@ -37,15 +38,22 @@ public class Testcode {
 			}
 			xmlString = sb.toString();
 			// Remove Empty XML Tag
-			for (String pattern : patterns) {
+			for (String pattern : emptyPatterns) {
 				Matcher matcher = Pattern.compile(pattern).matcher(xmlString);
 				xmlString = matcher.replaceAll("");
 			}
-			/* To Change Camel Casing to Underscore */
-			xmlString = xmlString.replaceAll(regex, replacement);
+			/* To Change Camel Casing to UnderScoreUpperCase */
+			xmlString = xmlString.replaceAll(camelCase, underScoreCase);
+			
+			/* To change to UnderScoreUpperCase to LowerCase*/
+			Pattern pattern = Pattern.compile(underScoreUpperCase);
+			Matcher matcher = pattern.matcher(xmlString);
+			xmlString = matcher.replaceAll(matche -> matche.group().toLowerCase());
 		}
 		finally {
 		}
 		System.out.println(xmlString);
+        // Call close() method
+		bufReader.close();
 	}
 }

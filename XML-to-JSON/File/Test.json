@@ -1,0 +1,360 @@
+{
+  "device" : [ {
+    "deviceid" : "08809265152507",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution\n\t\t",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152507",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-LR-004-F",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information\n\t\t",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable\n\t\t\t\t",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that\n\t\t\t\t\tis attached with screws to fractured craniofacial bone (including\n\t\t\t\t\tthe maxilla and/or mandible), to bridge and stabilize the fracture\n\t\t\t\t\tgap, and shield the site from stress as the bone heals; the\n\t\t\t\t\tmaterial cannot be chemically degraded or absorbed by natural body\n\t\t\t\t\tprocesses [includes implant grade metal such as surgical steel,\n\t\t\t\t\ttitanium alloy, or carbon fibre]. The device may also be used for\n\t\t\t\t\tcraniofacial reconstructive procedures (e.g., to treat congenital\n\t\t\t\t\tmalformations), endobrow fixation, or craniotomy flap fixation.\n\t\t\t\t"
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization\n\t\t\t\t"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152491",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution\n\t\t",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152491",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-018-R",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information\n\t\t",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable\n\t\t\t\t",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that\n\t\t\t\t\tis attached with screws to fractured craniofacial bone (including\n\t\t\t\t\tthe maxilla and/or mandible), to bridge and stabilize the fracture\n\t\t\t\t\tgap, and shield the site from stress as the bone heals; the\n\t\t\t\t\tmaterial cannot be chemically degraded or absorbed by natural body\n\t\t\t\t\tprocesses [includes implant grade metal such as surgical steel,\n\t\t\t\t\ttitanium alloy, or carbon fibre]. The device may also be used for\n\t\t\t\t\tcraniofacial reconstructive procedures (e.g., to treat congenital\n\t\t\t\t\tmalformations), endobrow fixation, or craniotomy flap fixation.\n\t\t\t\t"
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization\n\t\t\t\t"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152477",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152477",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-018-M",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation."
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152460",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152460",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-016-R",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation."
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152453",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152453",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-016",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation."
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152446",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152446",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-016-M",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation."
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization"
+      }
+    }
+  }, {
+    "deviceid" : "08809265152422",
+    "device_record_status" : "Published",
+    "device_publish_date" : "2015-09-24",
+    "device_comm_distribution_status" : "In Commercial Distribution",
+    "identifiers" : {
+      "identifier" : {
+        "device_id" : "08809265152422",
+        "device_id_type" : "Primary",
+        "device_id_issuing_agency" : "GS1"
+      }
+    },
+    "brand_name" : "Leforte",
+    "version_model_number" : "20-ST-010-R",
+    "company_name" : "Jeil Medical Corporation",
+    "device_count" : "1",
+    "DMExempt" : "false",
+    "premarket_exempt" : "false",
+    "device_hctp" : "false",
+    "device_kit" : "false",
+    "device_combination_product" : "false",
+    "single_use" : "true",
+    "lot_batch" : "true",
+    "serial_number" : "false",
+    "manufacturing_date" : "true",
+    "expiration_date" : "false",
+    "donation_id_number" : "false",
+    "labeled_contains_nrl" : "false",
+    "labeled_no_nrl" : "false",
+    "MRISafety_status" : "Labeling does not contain MRI Safety Information",
+    "rx" : "true",
+    "otc" : "false",
+    "gmdn_terms" : {
+      "gmdn" : {
+        "gmdn_ptname" : "Craniofacial fixation plate, non-bioabsorbable",
+        "gmdn_ptdefinition" : "A small, implantable sheet of firm material that is attached with screws to fractured craniofacial bone (including the maxilla and/or mandible), to bridge and stabilize the fracture gap, and shield the site from stress as the bone heals; the material cannot be chemically degraded or absorbed by natural body processes [includes implant grade metal such as surgical steel, titanium alloy, or carbon fibre]. The device may also be used for craniofacial reconstructive procedures (e.g., to treat congenital malformations), endobrow fixation, or craniotomy flap fixation."
+      }
+    },
+    "product_codes" : {
+      "fda_product_code" : {
+        "product_code" : "JEY",
+        "product_code_name" : "Plate, Bone"
+      }
+    },
+    "sterilization" : {
+      "device_sterile" : "false",
+      "sterilization_prior_to_use" : "true",
+      "method_types" : {
+        "sterilization_method" : "Moist Heat or Steam Sterilization"
+      }
+    }
+  } ]
+}

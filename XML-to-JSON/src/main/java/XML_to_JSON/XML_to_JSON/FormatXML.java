@@ -8,12 +8,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FormatXML {
-	public String EmptyXML() throws Exception {
+	public String FormatXMLData() throws Exception {
 		File xmlFile = new File(
 				"C:\\Users\\ankirane\\Desktop\\Ankit Courses\\Working Directory\\Eclipse\\XML-to-JSON\\File\\Test2.xml");
 		String xmlString = "";
 		String regex = "([a-z])([A-Z]+)";
 		String replacement = "$1_$2";
+		String underScoreUpperCase = "_[A-Z]+";
 		String[] patterns = new String[] {
 				// This will remove empty elements that look like <ElementName />
 				"\\s*<\\w+ />",
@@ -28,7 +29,7 @@ public class FormatXML {
 		Reader fileReader = new FileReader(xmlFile);
 		// Convert XML to String
 		BufferedReader bufReader = new BufferedReader(fileReader);
-		try{
+		try {
 			StringBuilder sb = new StringBuilder();
 			String line = bufReader.readLine();
 			while (line != null) {
@@ -41,11 +42,16 @@ public class FormatXML {
 				Matcher matcher = Pattern.compile(pattern).matcher(xmlString);
 				xmlString = matcher.replaceAll("");
 			}
-			/* To Change Camel Casing to Underscore */
+			/* To Change Camel Casing to UnderScoreUpperCase */
 			xmlString = xmlString.replaceAll(regex, replacement);
+
+			/* To change to UnderScoreUpperCase to LowerCase */
+			Pattern pattern = Pattern.compile(underScoreUpperCase);
+			Matcher matcher = pattern.matcher(xmlString);
+			xmlString = matcher.replaceAll(matche -> matche.group().toLowerCase());
+		} finally {
 		}
-		finally {
-		}
+		bufReader.close();
 		return xmlString;
 	}
 }

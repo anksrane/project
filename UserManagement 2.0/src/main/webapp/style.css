@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+		.action,.action:hover{
+			padding:0px 5px;
+			text-decoration:none;
+			color:#17a2b8;
+			font-weight:bold;
+		}
+		.navbar-brand{
+			color:white;
+		}
+		.navbar-brand:hover{
+			color:white;
+			font-weight:bold;
+		}
+		.nav-link{
+			color:#d0ecf0;
+		}
+		.nav-link:hover{
+			color:#d0ecf0;
+			font-weight:bold;
+		}
