@@ -1,5 +1,6 @@
 XML to JSON using Jackson Library on Maven Project
-Java Version 11.0.12
+Java Version 17.0.1
+Main File - XMLtoJSON.java
 _______________________________________________________________________
 Maven Dependencies
 	<dependencies>
@@ -9,8 +10,7 @@ Maven Dependencies
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-						<groupId>com.fasterxml.jackson.dataformat</groupId>
+		<dependency>									<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 			<version>2.9.0</version>
 		</dependency>

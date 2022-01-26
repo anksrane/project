@@ -1,0 +1,77 @@
+@charset "ISO-8859-1";
+
+.index-body {
+	display: flex;
+	height: 100vh;
+	padding: 5% 20%;
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%,
+		rgba(9, 106, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+.main-center {
+	padding: 10px;
+	background-color: #cde1e4;
+	border-radius: 10px;
+	min-height:650px;
+	height: auto;
+}
+h1 {
+	text-align: center;
+	font-weight: 800;
+	font-family: "Serif ", Times, serif;
+	font-size: 48px;
+	color:#032a30;
+}
+.form-group label {
+	margin: 10px 0px 10px 0px;
+	font-weight: 600;
+	font-size:24px;
+}
+textarea {
+	resize: none;
+}
+.btn,.btn-success:hover{
+	background-color:#075460;
+	width: 200px;
+	font-weight:bold;
+	font-size:20px;
+}
+.btn-success:hover{
+	background-color:#053f48;
+}
+.link, .link:hover{
+	width:250px;
+}
+.btn-success {
+	margin: 10px 0px 20px 0px;
+}
+.visiter-link {
+	text-align:center;
+	padding-top: 10px;
+}
+
+/*--------------------------------------*/
+/*Visitor Page CSS*/
+.visiter-page {
+	background: rgb(2, 0, 36);
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%,
+		rgba(9, 106, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+.text-center {
+	color: #ffffff;
+	padding: 20px 0px 0px 0px;
+}
+hr{
+	color:white;
+}
+.table-bordered{
+	background-color: #cde1e4;
+	border-color: #032a30;
+	margin-top: 10px;
+}
+.table-bordered thead{
+	background-color: #096a79;
+	color:#ffffff;
+}
+.table-bordered tbody td:nth-child(2) {
+  max-width:400px;
+}

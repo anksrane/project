@@ -11,9 +11,11 @@ public class XMLtoJSON {
 
 	public static void main(String[] args) throws Exception {
 		FormatXML objXML = new FormatXML();
-		FormatJSON objJSON=new FormatJSON();
 		String FormattedXmlString = objXML.FormatXMLData();
-		try {
+		String checkFile="File Not Found...!";
+		if(FormattedXmlString==checkFile) {
+			System.out.println(FormattedXmlString);
+		}else {
 			// Read XML File
 			XmlMapper xmlMapper = new XmlMapper();
 			//Convert to JSON Object and Print
@@ -22,10 +24,18 @@ public class XMLtoJSON {
 			JsonNode jsonNode = xmlMapper.readTree(FormattedXmlString);
 			ObjectMapper objectMapper = new ObjectMapper();
 			String value = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
-//			String FormattedJsonString=objJSON.FormatJSONData(value);
 			System.out.println(value);
-		} catch (IOException e) {
-			e.printStackTrace();
+			
+			File myObj = new File("C:\\Users\\ankirane\\Desktop\\Ankit Courses\\Working-Directory\\Eclipse\\XML-to-JSON\\File\\udi.json");
+			if (myObj.createNewFile()) {
+				System.out.println("File created: " + myObj.getName());				
+				System.out.println("File created: " + myObj.getAbsolutePath());				
+			} else {
+				System.out.println("File already exists.");
+			}
+		      FileWriter myWriter = new FileWriter(myObj);
+		      myWriter.write(value);
+		      myWriter.close();
 		}
 	}
 }
