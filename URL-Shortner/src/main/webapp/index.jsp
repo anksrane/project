@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="bean.Users"%>
+<%@ page import="bean.Visitor"%>
 <%@page import="bean.Message"%>
 <%@page import="bean.Links"%>
 <!DOCTYPE html>
@@ -30,10 +30,10 @@
         <div class="container">
             <form action="addUrl" method="post" name="longUrlForm">
                 <div class="form-group">
-                    <label for="LongURL">Enter Long URL</label>
+                    <label for="LongURL">Enter Original URL</label>
                     <textarea id="LongURL" class="form-control" name="longUrl" rows="4" required></textarea>
                 </div>
-                    <button class="btn btn-success" type="submit">Shorten URL</button>
+                    <button class="btn btn-success" type="submit">Trim URL</button>
             </form>
         </div>
 		
@@ -61,7 +61,7 @@
 		<div class="container">
         <form action="visitLink" method="post" name="shortUrlForm">
             <div class="form-group">
-                <label for="ShortURL">Short URL</label>
+                <label for="ShortURL">Optimized URL</label>
                 <input id="ShortURL" type="text" name="shortUrl" class="form-control"
 			value="<% String shortenURL=(String)request.getAttribute("shortUrlInput");
 			if (shortenURL == null || shortenURL.length() == 0) {
@@ -70,7 +70,7 @@
 			    out.print(shortenURL);
 		    }%>" required>
             </div>
-                <button class="btn btn-success" type="submit" value="Shorten URL" id="visitShortURL">Open Long URL</button>
+                <button class="btn btn-success" type="submit" value="Shorten URL" id="visitShortURL">Check URL</button>
         </form>
 	</div>
     

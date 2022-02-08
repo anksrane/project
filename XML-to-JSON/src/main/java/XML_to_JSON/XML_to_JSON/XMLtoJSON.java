@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-/*Using Jackson Object Convert to JSON*/
+// Using Jackson Object Convert to JSON
 public class XMLtoJSON {
 
 	public static void main(String[] args) throws Exception {
@@ -29,7 +29,7 @@ public class XMLtoJSON {
 			File myObj = new File("C:\\Users\\ankirane\\Desktop\\Ankit Courses\\Working-Directory\\Eclipse\\XML-to-JSON\\File\\udi.json");
 			if (myObj.createNewFile()) {
 				System.out.println("File created: " + myObj.getName());				
-				System.out.println("File created: " + myObj.getAbsolutePath());				
+				System.out.println("File created on Path: " + myObj.getAbsolutePath());				
 			} else {
 				System.out.println("File already exists.");
 			}

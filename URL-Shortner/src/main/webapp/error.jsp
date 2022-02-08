@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="bean.Users"%>
+<%@ page import="bean.Visitor"%>
 <%@page import="bean.Message"%>
 <%@page import="bean.Links"%>
 <!DOCTYPE html>

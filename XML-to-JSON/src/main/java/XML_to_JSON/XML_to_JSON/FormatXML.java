@@ -43,10 +43,10 @@ public class FormatXML {
 					Matcher matcher = Pattern.compile(pattern).matcher(xmlString);
 					xmlString = matcher.replaceAll("");
 				}
-				/* To Change Camel Casing to UnderScoreUpperCase */
+				// To Change Camel Casing to UnderScoreUpperCase 
 				xmlString = xmlString.replaceAll(regex, replacement);
 
-				/* To change to UnderScoreUpperCase to LowerCase */
+				// To change to UnderScoreUpperCase to LowerCase
 				Pattern pattern = Pattern.compile(underScoreUpperCase);
 				Matcher matcher = pattern.matcher(xmlString);
 				xmlString = matcher.replaceAll(matche -> matche.group().toLowerCase());

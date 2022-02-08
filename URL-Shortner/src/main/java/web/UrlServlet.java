@@ -1,7 +1,6 @@
 package web;
 
 import java.io.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
@@ -23,16 +22,17 @@ import com.google.common.hash.Hashing;
 
 import bean.Links;
 import bean.Message;
-import bean.Users;
+import bean.Visitor;
 import dao.LinksDAO;
-import dao.UsersDAO;
+import dao.VisitorDAO;
 
 @WebServlet("/")
 public class UrlServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private LinksDAO linksDAO;
-	private UsersDAO usersDAO;
-	
+	public LinksDAO linksDAO;
+	String longURL="";
+	String shortURL="";
+	String ipServer="http://checkip.amazonaws.com";
 
 	public UrlServlet() {
 		super();
@@ -44,104 +44,59 @@ public class UrlServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {	
-//		doGet(request, response);
-		String action = request.getServletPath();
-		if(!action.equals("/addurl")&&!action.equals("/visitLink")&&!action.equals("/viewList")) {
-			visitLinkByUrl(request, response);
-		}
+		doPost(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String action = request.getServletPath();
-		
-		if(action.equals("/addUrl")) {
-			addShortenUrl(request, response);
-		} else if (action.equals("/visitLink")) {
-			visitLink(request, response);
-		} else if (action.equals("/viewList")) {
-			try {
-				listUser(request, response);
-			} catch (ServletException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (SQLException e) {
-				e.printStackTrace();
+		//Handling Actions
+		try {
+			switch (action) {
+				case "/addUrl":
+					addShortenUrl(request, response);
+					break;
+				case "/viewList":
+					listUser(request, response);
+					break;
+				default:
+					visitLink(request, response);
+					break;
 			}
+		} catch (SQLException ex) {
+			throw new ServletException(ex);
 		}
 	}
 	
-	//Visit URL By Link
-	private void visitLinkByUrl(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		String ShortURL=request.getRequestURL().toString();
-		LinksDAO linksDao = new LinksDAO();
-		
-		try {
-			Links l = linksDao.searchByShortUrl(ShortURL);
-			if (l != null) {
-				String redirectLink = l.getLongUrl();
-				// Get Ip Address of User
-				URL whatismyip = new URL("http://checkip.amazonaws.com");
-				BufferedReader in = new BufferedReader(new InputStreamReader(whatismyip.openStream()));
-				String ip = in.readLine(); // you get the IP as a String
-
-				// Get Date and Time
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-				String currentDate = dtf.format(now);
-				DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("HH:MM:ss");
-				String currentTime = dtf2.format(now);
-
-				UsersDAO usersDao = new UsersDAO();
-				Users newUser = new Users(redirectLink,ShortURL, ip, currentDate, currentTime);
-				usersDao.insertUser(newUser);
-				response.sendRedirect(redirectLink);
-			} else {
-				Message msg = new Message("Page Not Found!", "error");
-				HttpSession s = request.getSession();
-				s.setAttribute("msg", msg);
-				response.sendRedirect("Error.jsp");
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-
-	//Create Short URL
+	//Generate Unique Short URL
 	private void addShortenUrl(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		String LongURL = request.getParameter("longUrl");
-		String ShortURL = "";
+		longURL = request.getParameter("longUrl");
 		String currentHost = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + "/URL-Shortner/";
-		UrlValidator urlValidator = new UrlValidator(new String[] { "http", "https" });
-		if (urlValidator.isValid(LongURL)) {
+		UrlValidator urlValidator = new UrlValidator();
+		if (urlValidator.isValid(longURL)) {
 			LocalDateTime time = LocalDateTime.now();
-			System.out.println("Time is: "+time);
-			ShortURL = currentHost + Hashing.murmur3_32()
-					.hashString(LongURL.concat(time.toString()), StandardCharsets.UTF_8).toString();
+			shortURL = currentHost + Hashing.murmur3_32()
+					.hashString(longURL.concat(time.toString()), StandardCharsets.UTF_8).toString();
+			Links newLink = new Links(longURL, shortURL);
 			
-			Links newLink = new Links(LongURL, ShortURL);
 			// Check Link Already In Database or Not
 			LinksDAO linksDao = new LinksDAO();
 			try {
-				Links linkObj = linksDao.searchByLongUrl(LongURL); 
+				Links linkObj = linksDao.searchByLongUrl(longURL); 
 				if (linkObj == null) {
 					// Create new Entry
 					linksDAO.insertLink(newLink);
-					request.setAttribute("shortUrlInput", ShortURL);
-					Message msg = new Message("URL Successfully Shorten", "success");
+					request.setAttribute("shortUrlInput", shortURL);
+					Message msg = new Message("URL Successfully Optimized", "success");
 					HttpSession s = request.getSession();
 					s.setAttribute("msg", msg);
 					request.getRequestDispatcher("index.jsp").forward(request, response);
-					System.out.println("New URL Inserted: " + ShortURL);
 				} 
 				else {
-					System.out.println("URL Already Exist");
-					Message msg = new Message("URL Already Exist", "error");
+					Message msg = new Message("URL Already Exist!", "error");
 					HttpSession s = request.getSession();
 					s.setAttribute("msg", msg);
-					linkObj = linksDao.searchByLongUrl(LongURL);
 					request.setAttribute("shortUrlInput", linkObj.getShortUrl());
 					request.getRequestDispatcher("index.jsp").forward(request, response);
 				}
@@ -150,23 +105,26 @@ public class UrlServlet extends HttpServlet {
 			}
 			
 		}else {
-			Message msg = new Message("Invalid URL", "error");
+			Message msg = new Message("Invalid URL!", "error");
 			HttpSession s = request.getSession();
 			s.setAttribute("msg", msg);
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
 	}
 	
-	//Visit Short URL
+	//Fetch Long URL from Short URL
 	private void visitLink(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		String ShortURL = request.getParameter("shortUrl");
+		shortURL = request.getParameter("shortUrl");
+		if(shortURL==null) {
+			shortURL = request.getRequestURL().toString();
+		}
 		LinksDAO linksDao = new LinksDAO();
 		try {
-			Links l = linksDao.searchByShortUrl(ShortURL);
-			if (l != null) {
-				String redirectLink = l.getLongUrl();
+			Links link = linksDao.searchByShortUrl(shortURL);
+			if (link != null) {
+				String redirectLink = link.getLongUrl();
 				// Get Ip Address of User
-				URL whatismyip = new URL("http://checkip.amazonaws.com");
+				URL whatismyip = new URL(ipServer);
 				BufferedReader in = new BufferedReader(new InputStreamReader(whatismyip.openStream()));
 				String ip = in.readLine(); // you get the IP as a String
 
@@ -176,31 +134,30 @@ public class UrlServlet extends HttpServlet {
 				String currentDate = dtf.format(now);
 				DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("HH:MM:ss");
 				String currentTime = dtf2.format(now);
+				System.out.println("Date: "+currentDate+" Time: "+currentTime);
 
-				UsersDAO usersDao = new UsersDAO();
-				Users newUser = new Users(redirectLink, ShortURL, ip, currentDate,currentTime);
+				VisitorDAO usersDao = new VisitorDAO();
+				Visitor newUser = new Visitor(redirectLink, shortURL, ip, currentDate,currentTime);
 				usersDao.insertUser(newUser);
 				response.sendRedirect(redirectLink);
 			} else {
-				Message msg = new Message("Short URL Doesn't Exist", "error");
+				Message msg = new Message("Optimized URL Doesn't Exist!", "error");
 				HttpSession s = request.getSession();
 				s.setAttribute("msg", msg);
-				response.sendRedirect("Error.jsp");
+				response.sendRedirect("error.jsp");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 
-	// List with Search
+	// List All Visitors
 	private void listUser(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException, SQLException {
-//			List<Users> listUser=usersDAO.selectAllUsers(find);
-		UsersDAO usersDao = new UsersDAO();
-		List<Users> listUser = usersDao.selectAllUsers();
+		VisitorDAO usersDao = new VisitorDAO();
+		List<Visitor> listUser = usersDao.selectAllUsers();
 		request.setAttribute("listUser", listUser);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("visitor-list.jsp");
 		dispatcher.forward(request, response);
 	}
-
 }

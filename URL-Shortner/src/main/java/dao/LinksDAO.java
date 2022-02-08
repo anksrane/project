@@ -11,7 +11,7 @@ public class LinksDAO {
 	Links link;
 	ConnectionManager connectionManager = new ConnectionManager();
 
-	// Insert New Link
+	// Insert New Short URL into Links Table
 	public void insertLink(Links newLink) {
 		Connection connection = connectionManager.getConnection();
 		try {
@@ -19,7 +19,6 @@ public class LinksDAO {
 			preparedStatement.setString(1, newLink.getLongUrl());
 			preparedStatement.setString(2, newLink.getShortUrl());
 			preparedStatement.execute();
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -27,7 +26,6 @@ public class LinksDAO {
 
 	// Search by Long URL
 	public Links searchByLongUrl(String longURL) throws SQLException {
-//		Links link = null;
 		Connection connection = connectionManager.getConnection();
 		PreparedStatement statement = connection.prepareStatement(CHECK_LONG_URL);
 		statement.setString(1, longURL);
@@ -43,7 +41,6 @@ public class LinksDAO {
 
 	// Search by Short URL
 	public Links searchByShortUrl(String shortURL) throws SQLException {
-//		Links link;
 		Connection connection = connectionManager.getConnection();
 		PreparedStatement statement = connection.prepareStatement(CHECK_SHORT_URL);
 		statement.setString(1, shortURL);
