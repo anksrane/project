@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container nav-wrapper">
+        <div class="brand">
+          <a
+            class="logo"
+            href="./docs/Resume Ankit Rane - 2022.pdf"
+            download="Resume Ankit Rane"
+          >
+            Ankit Rane
+          </a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="nav-link active" href="#info" data-target="#info">Info</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section class="section" id="info">
+      <div class="info-container container">
+        <div class="left">
+          <div class="about-me">
+            <h1>Hi,&nbsp;</h1>
+            <h1>I'm Ankit Rane&nbsp;</h1>
+            <div></div>
+          </div>
+        </div>
+        <div class="right">
+          <img class="profile-img" src="img/me without bg.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <div class="container">
+          <div class="modal card modal-info">
+            <div class="info-container company-info"></div>
+            <ul class="description"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Experience -->
+    <section class="section" id="experience">
+      <h1>Experience</h1>
+      <div class="cards container">
+        <div class="card card1">
+          <img class="round" src="img/here.jpg" alt="user" />
+          <h3>HERE Technologies Pvt LTD</h3>
+          <h6>Spatial Data Specialist</h6>
+          <div class="buttons">
+            <button class="primary" name="here">More Details</button>
+          </div>
+        </div>
+        <div class="card card2">
+          <img class="round" src="img/techflux.jfif" alt="user" />
+          <h3>Renam Technologies pvt. Ltd.</h3>
+          <h6>Software Developer</h6>
+          <div class="buttons">
+            <button class="primary" name="techflux">More Details</button>
+          </div>
+        </div>
+        <div class="card card3">
+          <img class="round" src="img/abhay.png" alt="user" />
+          <h3>Abhay Techsolutions LLP</h3>
+          <h6>Internship Trainee</h6>
+          <div class="buttons">
+            <button class="primary" name="abhaytech">More Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="section" id="skills">
+      <h1>Skills</h1>
+      <div class="skillbar-wrapper container">
+        <div class="skillbar clearfix html5" data-percent="80%">
+          <h4 class="skillbar-title"><span>HTML5</span></h4>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+
+        <div class="skillbar clearfix css" data-percent="75%">
+          <h4 class="skillbar-title"><span>CSS</span></h4>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div>
+
+        <div class="skillbar clearfix javascript" data-percent="60%">
+          <h4 class="skillbar-title"><span>JavaScript</span></h4>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">60%</div>
+        </div>
+
+        <div class="skillbar clearfix java" data-percent="75%">
+          <h4 class="skillbar-title"><span>Java</span></h4>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div>
+
+        <div class="skillbar clearfix sql" data-percent="65%">
+          <h4 class="skillbar-title"><span>SQL</span></h4>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">65%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study -->
+    <section class="section" id="education">
+      <h1>Education</h1>
+      <div class="container">
+        <div class="btn__tab-container">
+          <button class="btn btn__tab btn__tab-1 btn__tab-active" data-tab="1">
+            <div><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+            Degree
+          </button>
+          <button class="btn btn__tab btn__tab-2" data-tab="2">
+            <div><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+            Diploma
+          </button>
+          <button class="btn btn__tab btn__tab-3" data-tab="3">
+            <div><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+            SSC
+          </button>
+        </div>
+        <div
+          class="education-content education-content-1 education-content--active"
+        >
+          <div class="content-data">
+            <table>
+              <tr>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+                <td class="edu-data">
+                  <h4>2014 - 2017</h4>
+                  <h2>Tasgaonkar College of Engineering, Bhivpuri</h2>
+                  <h3>Bachelor of Computer Engineering (5.88 CGPI)</h3>
+                </td>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="education-content education-content-2">
+          <div class="content-data">
+            <table>
+              <tr>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+                <td class="edu-data">
+                  <h4>2010 - 2014</h4>
+                  <h2>Shreeram Polytechnic, Airoli</h2>
+                  <h3>Diploma Computer Technology (62.26% Aggregate)</h3>
+                </td>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="education-content education-content-3">
+          <div class="content-data">
+            <table>
+              <tr>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+                <td class="edu-data">
+                  <h4>2001 - 2010</h4>
+                  <h2>S.V. Joshi High School, Dombivli</h2>
+                  <h3>S.S.C. (Percentage 77.09%)</h3>
+                </td>
+                <td class="edu-icon">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Tag -->
+    <footer>
+      <div class="footer container">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:anks.rane@gmail.com">anks.rane@gmail.com</a>
+        </p>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="tel:+91808246690">+91-8082466900</a>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
